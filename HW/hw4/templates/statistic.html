@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <style>
+  .bg-1 {
+       background-color: #95129d;
+        color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #beffef;
+      color: #555555;
+  }
+  .bg-3 {
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  p {
+      font-size: 16px;
+  }
+  .margin {
+      margin-bottom: 45px;
+  }
+  </style>
+    <meta charset="UTF-8">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid bg-1 text-center">
+    <h1>Статистика по полученным данным</h1></div>
+<div class="container-fluid bg-2 text-center">
+<h3>Всего ответов получено: {{ num }}</h3>
+<p>Количество записанных ответов на том или ином языке:</p>
+<ul>
+    {% for x, y in lang.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul></div>
+<div class="container-fluid bg-3 text-center">
+<p>Частотность ответов в задании 1:</p>
+<ul>
+    {% for x, y in task1.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul>
+<p>Частотность ответов в задании 2:</p>
+<ul>
+    {% for x, y in task2.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul>
+<p>Частотность ответов в задании 3:</p>
+<ul>
+    {% for x, y in task3.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul>
+<p>Частотность ответов в задании 4:</p>
+<ul>
+    {% for x, y in task4.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul>
+<p>Частотность ответов в задании 5:</p>
+<ul>
+    {% for x, y in task5.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul>
+<p>Частотность ответов в задании 6:</p>
+<ul>
+    {% for x, y in task6.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul>
+<p>Частотность ответов в задании 7:</p>
+<ul>
+    {% for x, y in task7.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul>
+<p>Частотность ответов в задании 8:</p>
+<ul>
+    {% for x, y in task8.items() %}
+        <li>{{ x }} - {{ y }}</li>
+    {% endfor %}
+</ul>
+    <a href="{{ url }}">Вернуться на главную страницу</a>
+</div>
+</body>
+</html>

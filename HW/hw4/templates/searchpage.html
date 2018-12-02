@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница поиска</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .bg-1{
+        background-color: #95129d;
+        color: #ffffff;
+    }
+    .bg-2 {
+        background-color: #beffef;
+        color: #555555;
+    }
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .margin {
+        margin-bottom: 45px;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid bg-1 text-center">
+    <h1>Поиск по результатам</h1>
+    <image src="static/dog.jpg" class="img-circle" width="310" height="160">
+</div>
+<div class="container-fluid bg-2 text-center">
+    <h2>Что бы вы хотели найти?</h2>
+    <form action="/results" method="post">
+        <input type="text" name="searchrequest" value="" size="100">
+        <p><b>Чтобы поиск был более эффективным, необходимо выбрать язык данных, среди которых будет осуществляться поиск</b></p>
+        <p>Выберите, пожалуйста, язык
+        <select name="language" size="1">
+            <option value="zho">Китайский</option>
+            <option value="spa">Испанский</option>
+            <option value="eng">Английский</option>
+            <option value="ben">Бенгали</option>
+            <option value="hin">Хинди</option>
+            <option value="por">Португальский</option>
+            <option value="rus">Русский</option>
+            <option value="jpn">Японский</option>
+            <option value="deu">Немецкий</option>
+            <option value="jav">Яванский</option>
+            <option value="kor">Корейский</option>
+            <option value="fra">Французский</option>
+            <option value="vie">Вьетнамский</option>
+            <option value="tel">Телугу</option>
+            <option value="mar">Марати</option>
+            <option value="tam">Тамил</option>
+            <option value="tur">Турецкий</option>
+            <option value="urd">Урду</option>
+            <option value="guj">Гуджарати</option>
+            <option value="pol">Польский</option>
+            <option value="ara">Арабский</option>
+            <option value="ukr">Украинский</option>
+            <option value="ita">Итальянский</option>
+        </select></p>
+        <p><input type="submit" value="Найти"></p>
+    </form>
+<a href="{{ url }}">Вернуться на главную страницу</a></div>
+</body>
+</html>

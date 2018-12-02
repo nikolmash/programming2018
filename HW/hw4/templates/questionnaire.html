@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+  .bg-1 {
+       background-color: #95129d;
+        color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #beffef;
+      color: #555555;
+  }
+  .bg-3 {
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  p {
+      font-size: 16px;
+  }
+  .margin {
+      margin-bottom: 45px;
+  }
+  </style>
+    <meta charset="UTF-8">
+    <title>Лексико-типологическая анкета</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid bg-1 text-center">
+    <h1 class="margin" align="center">Анкета информанта</h1>
+        <image src="static/girl.jpg" class="img-circle" width="512" height="512">
+    </div>
+    <div class="container-fluid bg-2 text-center">
+    <h2 class="margin">Основная информация</h2>
+    <form action="/json" method="post">
+        <p>Имя <input type="text" name="firstname" value=""></p>
+        <p>Фамилия <input type="text" name="lastname" value=""></p>
+        <p>Пол <input type="radio" name="sex" value="female"> женский <input type="radio" name="sex" value="male"> мужской</p>
+        <p>Возраст <input type="number" name="age" min="1" max="100" step="1"></p>
+        <p>Язык
+        <select name="language" size="1">
+            <option value="zho">Китайский</option>
+            <option value="spa">Испанский</option>
+            <option value="eng">Английский</option>
+            <option value="ben">Бенгали</option>
+            <option value="hin">Хинди</option>
+            <option value="por">Португальский</option>
+            <option value="rus">Русский</option>
+            <option value="jpn">Японский</option>
+            <option value="deu">Немецкий</option>
+            <option value="jav">Яванский</option>
+            <option value="kor">Корейский</option>
+            <option value="fra">Французский</option>
+            <option value="vie">Вьетнамский</option>
+            <option value="tel">Телугу</option>
+            <option value="mar">Марати</option>
+            <option value="tam">Тамил</option>
+            <option value="tur">Турецкий</option>
+            <option value="urd">Урду</option>
+            <option value="guj">Гуджарати</option>
+            <option value="pol">Польский</option>
+            <option value="ara">Арабский</option>
+            <option value="ukr">Украинский</option>
+            <option value="ita">Итальянский</option>
+        </select></p></div>
+    <div class="container-fluid bg-3 text-center">
+        <h2 class="margin">Лексико-типологическая анкета</h2>
+        <p><image class="margin" src="static/sky1.jpg" width="300" height="190"><br>
+            1. Каким цветом вы бы описали небо на картинке выше? <input type="text" name="sky1" value=""></p>
+        <p><image class="margin" src="static/sky2.jpg" width="300" height="190"><br>
+            2. А как бы вы описали такое небо? <input type="text" name="sky2" value=""></p>
+        <p><image class="margin" src="static/sea.jpg" width="300" height="190"><br>
+            3. Какой цвет у моря, изображенного на картинке? <input type="text" name="sea" value=""></p>
+        <p><image class="margin" src="static/sand.jpg" width="300" height="190"><br>
+            4. Каким цветом можно охарактеризовать песок? <input type="text" name="sand" value=""></p>
+        <p><image class="margin" src="static/moon.png" width="300" height="190"><br>
+            5. Какой цвет больше всего подходит Луне? <input type="text" name="moon" value=""></p>
+        <p><image class="margin" src="static/sunset.jpg" width="300" height="190"><br>
+            6. Каким цветом вы бы описали небо на картинке выше? <input type="text" name="sunset" value=""></p>
+        <p><image class="margin" src="static/canyon.jpg" width="300" height="190"><br>
+            7. Какой цвет вы бы использовали, чтобы описать скалы Гранд Каньона? <input type="text" name="canyon" value=""></p>
+        <p><image class="margin" src="static/flower.jpg" width="300" height="190"><br>
+            8. Какого цвета этот цветок? <input type="text" name="flower" value=""></p>
+        <p><input type="submit"></p>
+        </form></div>
+</body>
+</html>
