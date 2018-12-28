@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты поиска</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .bg-1 {
+       background-color: #95129d;
+        color: #ffffff;
+  }
+    .bg-2 {
+      background-color: #beffef;
+      color: #555555;
+  }
+  .bg-3 {
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .container-fluid {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+  p {
+      font-size: 16px;
+  }
+  .margin {
+      margin-bottom: 45px;
+  }
+    .navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+  </style></head>
+<body>
+<nav class="navbar navbar-default">
+ <div class="container">
+    <div class="navbar-header">
+        <h3>Волжская правда</h3>
+        <p>Марий Эл</p>
+        <p>Ваш надежный источник информации</p>
+    </div></div></nav>
+<div class="container-fluid bg-3 text-center">
+    <p>Введите поисковой запрос</p>
+    <form action="/results" method="post">
+        <input type="text" name="searchrequest" value="" size="100">
+        <input type="submit" value="Найти">
+    </form></div>
+<div class="container-fluid bg-1 text-center">
+<h1>Результаты поиска</h1>
+<p>Вы искали: {{ criteria }}</p>
+</div>
+<div class="container-fluid text-center">
+<ol>
+    {% for x in results %}
+    <br><li>
+    {% for y in x %}
+        {{ y }} <br>
+    {% endfor %} </li>
+    {% endfor %}
+</ol>
+</div>
+</body>
+</html>
