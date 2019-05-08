@@ -1,0 +1,1 @@
+Ссылка на корпус и базу данных: https://docviewer.yandex.ru/view/49325511/?*=D2G%2FIAYATr%2BnOyZxwsYMXDrNoml7InVybCI6InlhLWRpc2s6Ly8vZGlzay9wb3N0dXBhc2hraS5yYXIiLCJ0aXRsZSI6InBvc3R1cGFzaGtpLnJhciIsInVpZCI6IjQ5MzI1NTExIiwieXUiOiI3MDA3NDYwNjMxNTI2OTIzNDc0Iiwibm9pZnJhbWUiOmZhbHNlLCJ0cyI6MTU1NzM1NDgwMjEwMX0%3D
